@@ -1,38 +1,41 @@
 .App {
+  height: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #5c0519 1%, #151e25 40%, #0c2d22 70%, #060c08 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(158, 158, 158);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 240, 240, 0.199);
+}
+
+html, body {
+  background: linear-gradient( to bottom, #3f0311, #141d24, #071b15, #0c1a11) !important;
+  color: white;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 350vh !important;
+}
+
+.ui.cards {
+  padding: 2em;
+}
+.ui.card>.content, .ui.cards>.card>.content {
+  padding: 0 !important;
+}
+.brand {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.4rem;
 }
